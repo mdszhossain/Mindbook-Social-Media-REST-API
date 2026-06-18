@@ -1,0 +1,66 @@
+/* index page styling */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: "Merriweather", serif;
+}
+
+.index-heading {
+    font-size: 30px;
+    text-align: center;
+    color: royalblue;
+    margin-top: 20px;
+}
+.post {
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 1px solid tomato;
+    width: 80%;
+    margin: 20px auto;
+}
+.user, .content {
+    margin: 5px;
+}
+.user {
+    color: royalblue;
+    font-weight: 800;
+}
+.content {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.post a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    display: block;
+    width: 8%;
+    text-align: center;
+    border-radius: 10px;
+}
+.post-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.new-post {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: royalblue;
+    padding: 10px 15px;
+    width: 5%;
+    border-radius: 10px;
+}

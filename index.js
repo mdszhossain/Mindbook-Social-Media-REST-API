@@ -11,6 +11,18 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
+// default posts array
+let posts = [
+    {userId: uuidv4(), username: "shazzadhsn", content: "Hello! I am Shazzad. I love coding"},
+    {userId: uuidv4(), username: "rifatsani", content: "Hello! I am Rifat. I got admission in UK"},
+    {userId: uuidv4(), username: "shanjidaakter", content: "Hello! I am Shanjida. I love eating"},
+];
+
+// index route rendering
+app.get("/posts", (req, res) => {
+    res.render("index.ejs", {posts});
+});
+
 app.listen(port, () => {
-  console.log(`Listening at port: ${port}`);
+    console.log(`Listening at port: ${port}`);
 });

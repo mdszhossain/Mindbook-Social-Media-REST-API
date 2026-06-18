@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="index-heading">Mind-Book-Media</h1>
+    <% for(post of posts) { %>
+        <div class="post">
+            <h3 class="user">username: @<%= post.username %></h3>
+            <p class="content">content: <%= post.content %></p>
+            <div class="post-btns">
+                <a href="">view-post</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">edit-post</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    <% } %>
+    <a class="new-post" href="">create-post</a>
+</body>
+</html>
+
+
+
