@@ -13,14 +13,14 @@
             <h3 class="user">username: @<%= post.username %></h3>
             <p class="content">content: <%= post.content %></p>
             <div class="post-btns">
-                <a href="">view-post</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://localhost:8080/posts/<%= post.userId %>">view-post</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="">edit-post</a> &nbsp;&nbsp;&nbsp;&nbsp;
             </div>
+            <form method="" action="" class="dlt-btn-form">
+                <button class="dlt-btn">delete-post</button>
+            </form>
         </div>
     <% } %>
-    <a class="new-post" href="">create-post</a>
+    <a class="new-post" href="http://localhost:8080/new">create-post</a>
 </body>
 </html>
-
-
-

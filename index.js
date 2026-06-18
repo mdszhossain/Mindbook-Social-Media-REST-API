@@ -23,6 +23,13 @@ app.get("/posts", (req, res) => {
     res.render("index.ejs", {posts});
 });
 
+// show route rendering
+app.get("/posts/:userId", (req, res) => {
+    let {userId} = req.params;
+    let post = posts.find((post) => userId === post.userId);
+    res.render("show.ejs", {post});
+});
+
 app.listen(port, () => {
     console.log(`Listening at port: ${port}`);
 });
