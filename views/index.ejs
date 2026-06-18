@@ -16,7 +16,7 @@
                 <a href="http://localhost:8080/posts/<%= post.userId %>">view-post</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="http://localhost:8080/posts/<%= post.userId %>/edit">edit-post</a> &nbsp;&nbsp;&nbsp;&nbsp;
             </div>
-            <form method="" action="" class="dlt-btn-form">
+            <form method="POST" action="http://localhost:8080/posts/<%= post.userId %>?_method=DELETE" class="dlt-btn-form">
                 <button class="dlt-btn">delete-post</button>
             </form>
         </div>

@@ -59,6 +59,13 @@ app.patch("/posts/:userId", (req, res) => {
     res.redirect("/posts");
 });
 
+// creating destroy route
+app.delete("/posts/:userId", (req, res) => {
+    let {userId} = req.params;
+    posts = posts.filter((post) => userId !== post.userId);
+    res.redirect("/posts");
+});
+
 app.listen(port, () => {
     console.log(`Listening at port: ${port}`);
 });
