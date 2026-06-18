@@ -8,7 +8,7 @@
     font-family: "Merriweather", serif;
 }
 
-.index-heading, .show-heading, .new-heading {
+.index-heading, .show-heading, .new-heading, .editpost-heading {
     font-size: 30px;
     text-align: center;
     color: royalblue;
@@ -112,4 +112,10 @@
 }
 .newpost-submit-btn:hover {
     cursor: pointer;
+}
+.editpost-post-id {
+    font-size: 18px;
+    color: royalblue;
+    font-weight: 600;
+    margin: 10px 0px;
 }

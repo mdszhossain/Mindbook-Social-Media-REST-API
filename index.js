@@ -43,6 +43,22 @@ app.post("/posts", (req, res) => {
     res.redirect("/posts");
 });
 
+// edit post ejs rendering
+app.get("/posts/:userId/edit", (req, res) => {
+    let {userId} = req.params;
+    let post = posts.find((post) => userId === post.userId);
+    res.render("edit.ejs", {post});
+});
+
+// update post and rerender the homepage
+app.patch("/posts/:userId", (req, res) => {
+    let {userId} = req.params;
+    let post = posts.find((post) => userId === post.userId);
+    let newContent = req.body.content;
+    post.content = newContent;
+    res.redirect("/posts");
+});
+
 app.listen(port, () => {
     console.log(`Listening at port: ${port}`);
 });
