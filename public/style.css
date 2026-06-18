@@ -8,7 +8,7 @@
     font-family: "Merriweather", serif;
 }
 
-.index-heading, .show-heading {
+.index-heading, .show-heading, .new-heading {
     font-size: 30px;
     text-align: center;
     color: royalblue;
@@ -79,4 +79,37 @@
 .dlt-btn-form {
     width: 10%;
     margin: 10px auto;
+}
+.newpost-form {
+    width: 30%;
+    margin: 15px auto;
+}
+.newpost-username {
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.newpost-content-field {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.newpost-submit-btn {
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.newpost-submit-btn:hover {
+    cursor: pointer;
 }

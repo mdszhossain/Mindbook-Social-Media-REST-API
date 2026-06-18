@@ -30,6 +30,19 @@ app.get("/posts/:userId", (req, res) => {
     res.render("show.ejs", {post});
 });
 
+// new route rendering
+app.get("/new", (req, res) => {
+    res.render("new.ejs");
+});
+
+// new post rendering
+app.post("/posts", (req, res) => {
+    let {username, content} = req.body;
+    let post = {userId: uuidv4(), username: username, content: content};
+    posts.push(post);
+    res.redirect("/posts");
+});
+
 app.listen(port, () => {
     console.log(`Listening at port: ${port}`);
 });
